@@ -1,0 +1,15 @@
+{
+  "agent_name": "github-artifact-uploader",
+  "evals": [
+    {
+      "id": "upload-agent-dry-run",
+      "prompt": "Dry-run upload ./OpenAgent/publishing-infra/skill-packager to account academic-user as artifact type agent, visibility public, capability publishing-infra, artifact name skill-packager.",
+      "expected_output": "A dry-run report targeting academic-user/OpenAgent at publishing-infra/skill-packager with no push and no credential persistence."
+    },
+    {
+      "id": "upload-skill-dry-run",
+      "prompt": "Dry-run upload ./OpenSkill/feishu/feishu-docs-vscode to account academic-user as artifact type skill, visibility public, capability feishu, artifact name feishu-docs-vscode.",
+      "expected_output": "A dry-run report targeting academic-user/OpenSkill at feishu/feishu-docs-vscode with no push and no credential persistence."
+    }
+  ]
+}

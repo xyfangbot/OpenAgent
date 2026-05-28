@@ -1,0 +1,15 @@
+{
+  "agent_name": "skill-packager",
+  "evals": [
+    {
+      "id": "package-public-skill",
+      "prompt": "Package ./feishu-docs-vscode-skill as a public skill named feishu-docs-vscode with capability feishu for both Codex and Claude Code.",
+      "expected_output": "A clean package with README, LICENSE, .gitignore, platform-specific skill folders, references, evals, installation instructions, and no private local artifacts."
+    },
+    {
+      "id": "package-private-skill",
+      "prompt": "Package ./private-note-workflow as a private skill named private-note-workflow for Claude Code only.",
+      "expected_output": "A private package with README, safety notes, Claude Code skill files, references as needed, and no public repository assumptions."
+    }
+  ]
+}

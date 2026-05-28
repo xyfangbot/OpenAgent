@@ -1,0 +1,15 @@
+{
+  "agent_name": "skill-github-uploader",
+  "evals": [
+    {
+      "id": "upload-public-skill-dry-run",
+      "prompt": "Dry-run upload ./dist/feishu-docs-vscode to account academic-user as public skill capability feishu skill-name feishu-docs-vscode.",
+      "expected_output": "A dry-run report targeting academic-user/OpenSkill at feishu/feishu-docs-vscode with no push and no credential persistence."
+    },
+    {
+      "id": "upload-private-skill-dry-run",
+      "prompt": "Dry-run upload ./dist/private-skill to account academic-user as private skill skill-name private-skill.",
+      "expected_output": "A dry-run report targeting academic-user/CloseSkill at private-skill with no push and no public repo assumptions."
+    }
+  ]
+}
