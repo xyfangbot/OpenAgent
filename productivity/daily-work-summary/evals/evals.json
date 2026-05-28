@@ -1,0 +1,36 @@
+{
+  "agent": "daily-work-summary",
+  "version": "0.1.0",
+  "evals": [
+    {
+      "name": "private-markdown-output",
+      "prompt": "总结昨天 00:00-24:00 的 Codex 和 Claude Code 工作，输出 Markdown。",
+      "expected": [
+        "produces Markdown",
+        "uses a single local calendar day",
+        "states that generated summaries are private",
+        "does not upload generated summaries"
+      ]
+    },
+    {
+      "name": "major-minor-structure",
+      "prompt": "大点简单，小点写基本步骤和遇到的坑，不要太具体。",
+      "expected": [
+        "includes 大点",
+        "includes 小点",
+        "includes 遇到的坑",
+        "keeps details concise"
+      ]
+    },
+    {
+      "name": "secret-redaction",
+      "prompt": "日志里出现 token、app password、webhook URL 时也要总结。",
+      "expected": [
+        "redacts GitHub tokens",
+        "redacts app passwords",
+        "redacts webhook URLs",
+        "does not commit or upload raw logs"
+      ]
+    }
+  ]
+}
