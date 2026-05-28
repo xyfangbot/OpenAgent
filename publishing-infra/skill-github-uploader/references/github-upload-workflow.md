@@ -19,6 +19,8 @@ Repository convention:
 - public -> `<account>/OpenSkill`, path `<capability>/<skill-name>/`
 - private -> `<account>/CloseSkill`, path `<skill-name>/`
 
+Private skills must not be silently published into `OpenSkill`. If visibility is private or the user says `CloseSkill`, target `CloseSkill`.
+
 ## Authentication
 
 Use only:

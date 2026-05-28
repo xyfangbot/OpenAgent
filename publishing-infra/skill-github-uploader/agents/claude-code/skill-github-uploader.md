@@ -22,6 +22,7 @@ Repository convention:
 
 - public uploads target `<account>/OpenSkill` at `<capability>/<skill-name>/`
 - private uploads target `<account>/CloseSkill` at `<skill-name>/`
+- Private skills must not be silently published into `OpenSkill`. If visibility is private or the user says `CloseSkill`, target `CloseSkill`.
 
 Authentication rules:
 

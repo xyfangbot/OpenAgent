@@ -22,6 +22,7 @@ Repository convention:
 - agent -> `<account>/OpenAgent`, path `<capability>/<agent-name>/`
 
 Agents are always public in this workflow.
+Private skills must not be silently published into `OpenSkill`. If visibility is private or the user says `CloseSkill`, target `CloseSkill`.
 
 ## Authentication
 
