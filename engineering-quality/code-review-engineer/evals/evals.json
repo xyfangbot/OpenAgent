@@ -15,6 +15,16 @@
       "id": "commit-hygiene-review",
       "prompt": "Review the staged changes and tell me how to split commits and write high-quality commit messages.",
       "expected_output": "Commit hygiene guidance that groups logical changes, excludes unrelated/generated files, recommends Conventional Commit messages, and keeps history/GitLens view clean."
+    },
+    {
+      "id": "objective-independent-review",
+      "prompt": "Review this PR objectively. Assume you did not write the code and do not defend the implementation.",
+      "expected_output": "Findings-first review that uses evidence from the diff/tests/docs, avoids author-intent speculation, labels uncertainty with confidence or risk, and separates blockers from optional improvements."
+    },
+    {
+      "id": "security-reliability-review",
+      "prompt": "Review this backend change for security, privacy, concurrency, migration, and production reliability risks.",
+      "expected_output": "Review covering auth/authz, injection, secrets/logging, insecure defaults, retries/timeouts, data loss, rollback/migration risk, race/deadlock risk, observability, and recommends specialized reviewers where needed."
     }
   ]
 }
