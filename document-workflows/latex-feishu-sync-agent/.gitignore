@@ -1,0 +1,15 @@
+node_modules/
+tmp/
+feishu-docs/
+feishu.config.local.json
+*.local.json
+build/
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.xdv
+.DS_Store

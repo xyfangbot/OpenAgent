@@ -10,6 +10,7 @@ OpenAgent is a public collection of reusable custom agents for Codex and Claude 
 
 Current agents:
 
+- `document-workflows/latex-feishu-sync-agent`: Builds portable LaTeX notes workflows with multi-PDF targets, Feishu Drive sync, watch mode, and Git/GitHub publishing hygiene.
 - `engineering-quality/code-review-engineer`: Reviews code for correctness, architecture isolation, performance/resource safety, tests, style, and git commit hygiene.
 - `publishing-infra/skill-packager`: Packages existing skills into professional public/private distributions.
 - `publishing-infra/skill-github-uploader`: Uploads already packaged skills to `OpenSkill` or `CloseSkill`.
