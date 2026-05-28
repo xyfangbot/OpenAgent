@@ -1,0 +1,20 @@
+{
+  "agent_name": "code-review-engineer",
+  "evals": [
+    {
+      "id": "architecture-isolation-review",
+      "prompt": "Review this PR for architecture quality. Pay special attention to whether I/O, orchestration, and core algorithms are separated.",
+      "expected_output": "Findings-first review that flags god classes/modules, mixed I/O and domain logic, hidden global state, and missing tests around boundaries."
+    },
+    {
+      "id": "performance-resource-review",
+      "prompt": "Review this diff for memory leaks, repeated copies, and performance risks.",
+      "expected_output": "Findings-first review covering unclosed resources, unbounded caches, repeated deep copies, hot-loop allocations, blocking I/O, N+1 or quadratic behavior, and measurement suggestions."
+    },
+    {
+      "id": "commit-hygiene-review",
+      "prompt": "Review the staged changes and tell me how to split commits and write high-quality commit messages.",
+      "expected_output": "Commit hygiene guidance that groups logical changes, excludes unrelated/generated files, recommends Conventional Commit messages, and keeps history/GitLens view clean."
+    }
+  ]
+}
