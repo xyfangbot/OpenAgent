@@ -33,15 +33,16 @@ Restart the relevant tool after installation.
 Write generated summaries to:
 
 ```text
-daily-work-summaries/YYYY-MM-DD.md
+~/daily-work-summaries/YYYY-MM-DD.md
 ```
 
-Keep that directory in `.gitignore`. The agent package is public; the generated daily summaries are private working notes.
+The default location is outside the project workspace. If you choose a project-local output directory, keep that directory in `.gitignore`. The agent package is public; the generated daily summaries are private working notes.
 
 ## Example Prompts
 
 - `用 daily-work-summary 总结昨天 00:00-24:00 我在 Codex 和 Claude Code 里做了什么，输出 Markdown。`
-- `检查 daily-work-summaries 目录是否会被 Git 提交，如果会就修正忽略规则。`
+- `帮我把今天的工作按大点和小点总结一下，大点简单，小点写基本步骤和遇到的坑，不要太细。`
+- `检查每日总结输出目录是否会被 Git 提交，如果会就修正忽略规则。`
 
 ## Safety
 

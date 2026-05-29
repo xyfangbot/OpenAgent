@@ -38,7 +38,8 @@ Source handling:
 Privacy and publication rules:
 
 - Generated Markdown summaries are private working notes. Never upload them to GitHub.
-- Ensure `daily-work-summaries/` or the chosen output directory is in `.gitignore`.
+- Prefer `~/daily-work-summaries/` as the private output directory outside the project workspace.
+- If the user chooses a project-local output directory, ensure it is in `.gitignore`.
 - Never commit raw conversation logs, generated summaries, `.env` files, app passwords, GitHub tokens, Gmail secrets, webhook URLs, cookies, sessions, private PDFs, or personal account details.
 - Redact secrets before writing summaries: GitHub PATs, `ghp_` tokens, `sk-` style secrets, app passwords, email addresses, authorization headers, and Google Apps Script webhook URLs.
 

@@ -26,7 +26,7 @@ Do not include raw logs in the final Markdown. Convert them into concise bullets
 
 > 范围：Asia/Shanghai YYYY-MM-DD 00:00-24:00。
 > 来源：Codex N 条有效消息，Claude Code N 条有效消息。
-> 说明：本文件根据本机对话日志自动生成，只供个人回顾；不要提交到 Git。
+> 说明：本文件根据本机对话日志自动生成，只供个人回顾；默认保存到 ~/daily-work-summaries，不要提交到 Git。
 
 ## 大点
 - ...
@@ -56,7 +56,8 @@ Do not include raw logs in the final Markdown. Convert them into concise bullets
 - Redact app passwords and authorization headers.
 - Redact Google Apps Script webhook URLs.
 - Avoid raw personal email addresses unless the user explicitly wants them.
-- Keep the generated Markdown directory ignored by Git.
+- Prefer `~/daily-work-summaries/` so generated Markdown stays outside the project workspace.
+- If a project-local output directory is used, keep it ignored by Git.
 - Never push generated summaries to OpenAgent.
 
 ## Quality Bar
