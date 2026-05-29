@@ -2,14 +2,14 @@
 
 ## Purpose
 
-Create a private Markdown summary for a single local calendar day using Codex and Claude Code conversations as evidence.
+Create a private Markdown summary for a single full local calendar day using all local Codex and Claude Code conversations as evidence. The output should be a work summary, not a copied conversation digest.
 
 ## Date Window
 
 - Default timezone: `Asia/Shanghai`.
 - Manual run: summarize the requested date.
-- Scheduled run: run shortly after midnight and summarize the previous date.
-- The logical range is local `00:00:00` through `23:59:59`.
+- Scheduled run: run at `00:05` and summarize the previous date.
+- The logical range is local `YYYY-MM-DD 00:00` through the next day `00:00`.
 
 ## Evidence Sources
 
@@ -17,32 +17,32 @@ Create a private Markdown summary for a single local calendar day using Codex an
 - Claude Code: `~/.claude/projects/`
 - Optional user notes supplied in the prompt.
 
-Do not include raw logs in the final Markdown. Convert them into concise bullets.
+Do not include raw logs or raw prompts in the final Markdown. Convert them into concise work-summary bullets.
 
 ## Markdown Structure
 
 ```markdown
 # 每日工作总结 - YYYY-MM-DD
 
-> 范围：Asia/Shanghai YYYY-MM-DD 00:00-24:00。
-> 来源：Codex N 条有效消息，Claude Code N 条有效消息。
+> 时间范围：Asia/Shanghai YYYY-MM-DD 00:00 至 YYYY-MM-DD+1 00:00。
+> 自动生成：每天 00:05 生成前一天总结。
+> 对话范围：当天所有本机可见 Codex/Claude Code 对话，不限于当前窗口。
 > 说明：本文件根据本机对话日志自动生成，只供个人回顾；默认保存到 ~/daily-work-summaries，不要提交到 Git。
 
-## 大点
+## 今日大点
 - ...
 
-## 小点
+## 分项小结
 ### 1. ...
+- 做了什么：...
+- 基本步骤：...
+- 遇到的坑：...
+- 结果：...
+
+## 关键坑
 - ...
 
-## 遇到的坑
-- ...
-
-## 平台来源
-### Codex
-- ...
-
-### Claude Code
+## 对话来源
 - ...
 
 ## 明天可继续
@@ -63,6 +63,7 @@ Do not include raw logs in the final Markdown. Convert them into concise bullets
 ## Quality Bar
 
 - Major points are short and easy to scan.
-- Subpoints mention practical steps and pitfalls, but avoid transcript-level detail.
+- Subpoints mention practical steps, pitfalls, and results, but avoid transcript-level detail.
 - The summary distinguishes completed work, attempted work, blockers, and follow-up items.
+- The summary never uses raw-prompt bullets such as `明确需求：...`.
 - If a claim is not supported by logs or user notes, omit it.
